@@ -1,0 +1,25 @@
+{
+  "name": "squeek-burrow-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Landing site for Squeek Burrow, an unofficial idle game that follows the real Squeekchain hamster wheel.",
+  "scripts": {
+    "dev": "vite",
+    "og": "node scripts/make-og.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build": "npm run og && tsc --noEmit -p tsconfig.json && vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7"
+  }
+}
